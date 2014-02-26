@@ -67,6 +67,11 @@ class python {
                 provider => pip,
                 require => Package['ipython']
             }
+            package { 'openpyxl':
+                ensure => installed,
+                provider => pip,
+                require => Package['ipython']
+            }
         }
     }
 }
